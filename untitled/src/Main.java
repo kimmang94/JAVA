@@ -3,29 +3,24 @@
 public class Main {
     public static void main(String[] args) {
        /*
-       산술 연산자
-       + : 더하기 ; 덧셈 연산
-       - : 빼기 ; 뺼셈 연산
-       * : 곱하기 ; 곱셈 연산
-       / : 나누기 ; 나눗셈 연산
-       % : 나머지 ; 나눗셈의 나머지를 산출하는 연산
+        오버플로우
+        언더플로우
         */
 
-        byte v1 = 10;
-        byte v2 = 4;
-        int v3 = 5;
-        long v4 = 10L;
+        byte var1 = 125;
+        for (int i = 0; i < 5; i++)
+        {
+            var1++;
+            System.out.println("var1 : "+ var1);
+        }
 
-        int result1 = v1 + v2;
-        System.out.println("result1 :" + result1);
+        System.out.println("==================");
 
-        long result2 = v1 + v2 - v4;
-        System.out.println("result2 :" + result2);
-
-        double result3 = (double)v1 / v2;
-        System.out.println("result3 :" + result3);
-
-        int result4 = v1 % v2;
-        System.out.println("result4 :" + result4);
+        byte var2 = -125;
+        for (int i = 0; i < 5; i++)
+        {
+            var2--;
+            System.out.println("var2 : " + var2);
+        }
     }
 }
