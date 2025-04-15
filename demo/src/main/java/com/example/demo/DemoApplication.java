@@ -10,11 +10,16 @@ public class DemoApplication {
 
 		SpringApplication.run(DemoApplication.class, args);
 
-
-		String name = "김혁";
-		int age = 32;
-		System.out.println(name);
+		var test = new Friend("lee");
+		System.out.println(test.name);
 
 	}
 
+}
+class Friend{
+	String name = "kim";
+	int age = 20;
+	Friend(String name){
+		this.name = name;
+	}
 }
