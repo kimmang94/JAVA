@@ -15,4 +15,4 @@ public class Main {
         System.out.println(card);
         System.out.println(d);
         System.out.println(cal);
-}
+    }
